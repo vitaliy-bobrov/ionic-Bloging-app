@@ -1,0 +1,14 @@
+<ion-view view-title="Articles">
+  <ion-content>
+
+    <ion-list>
+      <ion-item class="list card" ng-repeat="article in articles" type="item-text-wrap" href="#/tab/articles/{{article.nid}}">
+      <h2 class="title">{{article.title}}</h2>
+        <div class="item item-image">
+          <img ng-src="{{article.field_image}}">
+        </div>
+      </ion-item>
+    </ion-list>
+
+  </ion-content>
+</ion-view>
